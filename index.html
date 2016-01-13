@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>2048</title>
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		  
+		<style>
+			h1{
+				font-style: "Courier New", Courier, monospace;
+				text-align: left;
+				margin-left: 20px; 
+				color: whitesmoke;
+			}
+			
+			body{
+				background:  #404245;
+				
+			}
+			
+			.container{
+  				margin-right: auto;
+  				margin-left: auto;
+			  	max-width: 800px; /* or 950px */
+			}
+			
+			div#t {
+				margin-left: 0px;
+				text-align:  left;
+				align-content: left;
+				margin-bottom: 0%;
+			}
+			
+			div#t2 {
+				align-content: right;
+				margin-bottom: 0%;
+				
+			}
+						
+		</style>
+	</head>
+	<body>
+		
+		<div class="container text-center">
+			<h1>2048</h1>
+			  <div class="col-md-12" id="t">
+				<button type="button" class="btn btn-default" id="reset" onclick="reset()">Reset</button>	  
+				</div>
+			<canvas id="main_canvas" width="800" height="600" ></canvas>
+			<script src="j2048.js"></script>
+		</div>
+		
+		
+		
+		
+
+	</body>
+</html>
